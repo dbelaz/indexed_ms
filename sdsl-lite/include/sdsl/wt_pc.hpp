@@ -720,9 +720,9 @@ class wt_pc
 		 */
         size_type select_at_dist(const value_type c, const size_type i, const size_type d) const{
         	// occurrence count of c in [0..i-1]
-        	size_type threshold_cnt = rank(i, c);
-        	// index of the d-th 'c' after position i
-        	return select(threshold_cnt + d, c);
+        	size_type c_cnt = rank(i, c);
+			// index of the d-th 'c' after position i
+			return select(c_cnt + d, c);
 		};
 
 

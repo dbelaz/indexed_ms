@@ -496,6 +496,7 @@ class bwt_of_csa_wt
         }
 
         size_type select_at_dist(const char_type c, const size_type i, const size_type d) const {
+			//size_type cnt_c = m_csa.C[m_csa.char2comp[c] + 1] - m_csa.C[m_csa.char2comp[c]];
             return m_csa.select_at_dist_bwt(c, i, d);
 		}
 
